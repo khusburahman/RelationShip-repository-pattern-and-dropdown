@@ -1,0 +1,22 @@
+﻿@model SMS.webapp.ViewModel.StudentVm
+@{
+
+}
+<h1 class="text-center">Please Register</h1>
+<hr />
+<div class="container">
+    <form asp-controller="Student" asp-action="CreateOrEdit"method="post">
+    <div class="row">
+        <div class="col-md-6">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control"/>
+        </div>
+    </div>
+
+        <div class="col-md-6 mt-3">
+            <button class="btn btn-success" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+
